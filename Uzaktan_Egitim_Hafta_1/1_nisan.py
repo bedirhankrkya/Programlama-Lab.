@@ -131,7 +131,7 @@ def my_linear_search(my_list,item_search):
     for indis in range (n):
         if my_list[indis]==item_search:
             found=(my_list[indis],indis)# Listede Bulundu, return bulunan sayı , indisi tuple olarak return edilir.
-            #berak, uncoment for last found
+            #break, uncomment for last found
     return found
 my_list=get_n_random_numbers(10,-5,5)
 print(my_linear_search(my_list,3))
@@ -215,7 +215,7 @@ print("<-------------------------------------------->")
 #-----------------------------median of a list-------------------------------
 
 size=input("Dizi Boyutunu Giriniz : ")
-size=int(size) #covert str tı int // string değeri integer değere çevirdik
+size=int(size) #covert str to int // string değeri integer değere çevirdik
 my_list_1=get_n_random_numbers(size)
 print("liste ",my_list_1)
 my_list_2=bubble_sort(my_list_1)
