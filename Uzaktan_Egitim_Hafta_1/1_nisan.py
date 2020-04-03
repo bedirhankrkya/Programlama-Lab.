@@ -140,7 +140,7 @@ print("<-------------------------------------------->")
 
 #---------------------mean of list----------------------
 
-my_list=my_list=get_n_random_numbers(10,-50,50)
+my_list=get_n_random_numbers(10,-50,50)
 print(my_list)
 s,t=0,0
 for item in my_list:
