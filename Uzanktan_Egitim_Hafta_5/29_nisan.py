@@ -25,11 +25,11 @@ def weightInverse(item):
 def density(item): 
     return item.getValue()/item.getWeight() 
 
-#Boyuta göre tüm olasılıkları bulan fonksşyon
+#Boyuta göre tüm olasılıkları bulan fonksiyon
 def greedy(items, maxWeight, keyFunction):
     itemsCopy = sorted(items, key=keyFunction, reverse = True) #itemleri bizim belirlediğimiz kritere göre sıraladık.
     result = [] #çantaya koyacağımız değerler.
-    totalValue, totalWeight = 0.0, 0.0  #çanta doldu mu çantamızadaki ağırlık nedir diye burdagösterdik
+    totalValue, totalWeight = 0.0, 0.0  #çanta doldu mu çantamızadaki ağırlık nedir diye burda gösterdik
     
     for i in range(len(itemsCopy)): 
         if (totalWeight + itemsCopy[i].getWeight()) <= maxWeight:
